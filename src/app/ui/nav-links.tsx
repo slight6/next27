@@ -17,6 +17,24 @@ export function NavLinks() {
                 About
             </Link>
 
+            <Link className={`link ${pathname === '/games' ? 'active' : ''}`} href='/games'>
+                Games
+            </Link>
+
+            <Link className={`link ${pathname === '/contact' ? 'active' : ''}`} href='/contact'>
+                Contact
+            </Link>
+
+            <Link className={`link ${pathname === '/blog' ? 'active' : ''}`} href='/blog'>
+                Blog
+            </Link>
+
+            <Link className={`link ${pathname === '/login' ? 'active' : ''}`} href='/login'>
+                Login
+            </Link>
+
+
+
         </nav>
     )
 }
