@@ -1,7 +1,7 @@
 
 // 'app/page.tsx' is the UI for the '/' route.
 // import Link from 'next/link'
-import Footer from './components/Footer'
+import InfoCard from './components/cards/InfoCard'
 
 async function getData() {
     const res = await fetch('https://random-data-api.com/api/v2/appliances')
@@ -25,8 +25,8 @@ export default async function Page() {
             Adipisci dolorum, provident tempora qui nobis sunt repellat eius distinctio, aut, iste officia dolores et ea similique? 
             Id maiores optio nam maxime!
         </p>
+        <InfoCard title="Title" value="Value" icon={<svg />} />
         
-        <Footer />
     </div>
 
 

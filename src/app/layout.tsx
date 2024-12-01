@@ -1,8 +1,9 @@
-import { NavLinks } from '@/app/ui/nav-links'
 
+import { NavLinks } from '@/app/ui/nav-links';
 
 import type { Metadata } from "next";
 import "./globals.css";
+import Footer from './components/Footer';
 
 export const metadata: Metadata = {
   title: "27pro",
@@ -15,6 +16,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <body>
         <NavLinks />
         <main>{ children }</main>
+        <Footer />
+        <span className="flex justify-center">Copyright 2018-{new Date().getFullYear()}</span>
       </body>
     </html>
   )
